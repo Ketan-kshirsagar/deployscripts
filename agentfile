@@ -1,0 +1,12 @@
+pipeline {
+    agent { label 'my-agent' }
+    stages {
+        stage('Test') {
+            steps {
+                script {
+                    println('Testing on a specific agent')
+                }
+            }
+        }
+    }
+}
